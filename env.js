@@ -1,0 +1,14 @@
+import dotenv from "dotenv";
+dotenv.config();
+
+const env = process.env;
+
+const ENV = {
+    DB: {
+        MONGODB_URI: env.MONGODB_URI,
+        DB_NAME: env.DB_NAME,
+    },
+    port: env.PORT,
+};
+
+export default ENV;

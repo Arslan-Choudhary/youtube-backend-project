@@ -5,11 +5,21 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/app.js"
   },
   "author": "Arslan Choudhary",
   "license": "ISC",
   "devDependencies": {
     "prettier": "^3.8.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.5"
+  },
+  "imports": {
+    "#server": "./src/server/server.js",
+    "#env": "./env.js",
+    "#connections": "./src/exports/connections.js"
   }
 }
