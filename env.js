@@ -9,6 +9,7 @@ const ENV = {
         DB_NAME: env.DB_NAME,
     },
     port: env.PORT,
+    CORS: env.CORS_ORIGIN
 };
 
 export default ENV;

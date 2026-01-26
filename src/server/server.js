@@ -1,7 +1,19 @@
 import express from "express";
-import { connectDB } from "#connections";
-connectDB();
+import { cors, cookieParser } from "#middlewares";
+import ENV from "#env";
 
-const app = express()
+const app = express();
 
-export default app
+app.use(
+    cors({
+        origin: ENV.CORS,
+        credentials: true,
+    })
+);
+
+app.use(express.json({ limit: "16kb" }));
+app.use(express.urlencoded({ extended: true, limit: "16kb" }));
+app.use(express.static("public"));
+app.use(cookieParser());
+
+export default app;
