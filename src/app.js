@@ -2,6 +2,9 @@ import app from "#server";
 import ENV from "#env";
 import { connectDB } from "#connections";
 
+import "#syncRoutes";
+import "#models";
+
 const PORT = ENV.port;
 
 connectDB()

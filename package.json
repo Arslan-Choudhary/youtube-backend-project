@@ -14,18 +14,25 @@
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "cloudinary": "^2.9.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.1.5",
-    "mongoose-aggregate-paginate-v2": "^1.1.4"
+    "mongoose-aggregate-paginate-v2": "^1.1.4",
+    "multer": "^2.0.2"
   },
   "imports": {
     "#server": "./src/server/server.js",
     "#env": "./env.js",
     "#connections": "./src/exports/connections.js",
-    "#middlewares": "./src/exports/middlewares.js"
+    "#middlewares": "./src/exports/middlewares.js",
+    "#models": "./src/exports/modelRoutes.js",
+    "#utils": "./src/exports/utils.js",
+    "#controllers": "./src/exports/controllers.js",
+    "#routes": "./src/exports/routes.js",
+    "#syncRoutes": "./src/server/routes.js"
   }
 }
