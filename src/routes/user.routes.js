@@ -14,6 +14,8 @@ userRouter.route("/register").post(
 
 userRouter.route("/login").post(UserController.loginUser);
 
+// secure routes
 userRouter.route("/logout").post(verifyJWT, UserController.logoutUser);
+userRouter.route("/refresh-token").post(UserController.refreshAccessToken);
 
 export default userRouter;
