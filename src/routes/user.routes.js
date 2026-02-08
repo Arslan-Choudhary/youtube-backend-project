@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { UserController } from "#controllers";
-import { upload } from "#middlewares";
+import { upload, verifyJWT } from "#middlewares";
 
 const userRouter = Router();
 
@@ -11,5 +11,9 @@ userRouter.route("/register").post(
     ]),
     UserController.registerUser
 );
+
+userRouter.route("/login").post(UserController.loginUser);
+
+userRouter.route("/logout").post(verifyJWT, UserController.logoutUser);
 
 export default userRouter;
