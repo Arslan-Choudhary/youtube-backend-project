@@ -33,6 +33,8 @@
     "#utils": "./src/exports/utils.js",
     "#controllers": "./src/exports/controllers.js",
     "#routes": "./src/exports/routes.js",
-    "#syncRoutes": "./src/server/routes.js"
+    "#syncRoutes": "./src/server/routes.js",
+    "#repository": "./src/exports/repository.js",
+    "#service": "./src/exports/service.js"
   }
 }
