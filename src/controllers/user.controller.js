@@ -3,6 +3,7 @@ import {
     ApiError,
     uploadOnCloudinary,
     ApiResponse,
+    ResponseHandler,
 } from "#utils";
 import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
@@ -29,16 +30,26 @@ class UserController {
         }
     };
 
-    static registerUser = asyncHanlder(async (req, res) => {
-        const user = await UserService.registerUser({
-            ...req.body,
-            files: req.files,
-        });
+    static async registerUser(req, res) {
+        try {
+            const user = await UserService.registerUser({
+                ...req.body,
+                files: req.files,
+            });
 
-        return res
-            .status(201)
-            .json(new ApiResponse(200, user, "User registered successfully"));
-    });
+            return ResponseHandler.createHandler(
+                res,
+                user,
+                "User created successfully"
+            );
+        } catch (error) {
+            ResponseHandler.errorHandler(res, error);
+        }
+
+        // return res
+        //     .status(201)
+        //     .json(new ApiResponse(200, user, "User registered successfully"));
+    }
 
     // static registerUser = asyncHanlder(async (req, res) => {
     //     const { fullName, email, username, password } = req.body;

@@ -1,0 +1,12 @@
+21-2-2026 12:12:08 PM error: querySrv ECONNREFUSED _mongodb._tcp.videotube.ln5eeye.mongodb.net
+Error: querySrv ECONNREFUSED _mongodb._tcp.videotube.ln5eeye.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17)
+21-2-2026 12:12:31 PM error: querySrv ECONNREFUSED _mongodb._tcp.videotube.ln5eeye.mongodb.net
+Error: querySrv ECONNREFUSED _mongodb._tcp.videotube.ln5eeye.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17)
+21-2-2026 12:12:53 PM error: querySrv ECONNREFUSED _mongodb._tcp.videotube.ln5eeye.mongodb.net
+Error: querySrv ECONNREFUSED _mongodb._tcp.videotube.ln5eeye.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17)
+21-2-2026 12:13:07 PM error: querySrv ECONNREFUSED _mongodb._tcp.videotube.ln5eeye.mongodb.net
+Error: querySrv ECONNREFUSED _mongodb._tcp.videotube.ln5eeye.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:294:17)

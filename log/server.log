@@ -1,0 +1,21 @@
+21-2-2026 12:03:38 PM error: listen EACCES: permission denied asd
+Error: listen EACCES: permission denied asd
+    at Server.setupListenHandle [as _listen2] (node:net:1918:21)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2119:5)
+    at Function.listen (C:\code\Chai aur Backend\node_modules\express\lib\application.js:605:24)
+    at file:///C:/code/Chai%20aur%20Backend/src/app.js:13:13
+    at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+21-2-2026 12:55:44 PM error: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\code\Chai aur Backend\node_modules\express\lib\application.js:605:24)
+    at file:///C:/code/Chai%20aur%20Backend/src/app.js:13:13
+    at ModuleJob.run (node:internal/modules/esm/module_job:345:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)

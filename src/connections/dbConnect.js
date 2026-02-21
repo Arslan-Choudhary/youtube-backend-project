@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import ENV from "#env";
+import { Logger } from "#utils";
 
 const connectDB = async () => {
     console.log("mongo urI: ", ENV.DB.MONGODB_URI);
@@ -11,8 +12,9 @@ const connectDB = async () => {
             `\n MongoDB connected || DB HOST: ${connectionInstance.connection.host}`
         );
     } catch (error) {
-        console.error("Error while connecting database: ", error);
-        process.exit(1);
+        Logger.databaseLogger.logError(error);
+        // console.error("Error while connecting database: ", error);
+        // process.exit(1);
     }
 };
 
