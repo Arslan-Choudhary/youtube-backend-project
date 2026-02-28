@@ -36,6 +36,15 @@ class ResponseHandler {
             data: data ? data : "",
         });
     };
+    static tooManyRequests(
+        res,
+        data = null,
+        message = ServerResponse.API_RESPONSE_MESSAGE.RATE_LIMIT
+    ) {
+        return res
+            .status(ServerResponse.API_STATUS_CODE.RATE_LIMIT)
+            .json({ status: ServerResponse.API_STATUS_CODE.RATE_LIMIT, message, data });
+    }
 }
 
 export default ResponseHandler;
